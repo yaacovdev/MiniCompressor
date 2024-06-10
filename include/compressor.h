@@ -1,14 +1,9 @@
 #ifndef COMPRESSOR_H
 #define COMPRESSOR_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#include <string>
 
-void compress(const char *file, const char *algorithm);
-
-#ifdef __cplusplus
-}
-#endif
+void compress(const std::string& file, const std::string& algorithm);
 
 #endif // COMPRESSOR_H
+

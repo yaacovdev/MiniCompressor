@@ -1,14 +1,12 @@
 MiniCompressor/
-├── src/
-│   ├── compressor.c
-│   ├── decompressor.c
-│   ├── huffman.cpp
-│   ├── lzw.cpp
-│   └── main.c
+├── bin/
 ├── include/
-│   ├── compressor.h
-│   ├── decompressor.h
 │   ├── huffman.h
-│   └── lzw.h
+│   └── compressor.h
+├── src/
+│   ├── huffman.cpp
+│   └── compressor.cpp
+├── test/
+│   └── test_huffman.cpp
 ├── Makefile
 └── README.md
