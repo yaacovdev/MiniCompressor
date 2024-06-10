@@ -36,19 +36,18 @@ public:
     void buildHuffmanTree();
     HuffmanNode *getRoot() const { return root; }
 
+    void generateCodes(HuffmanNode *node, const std::string &prefix, std::unordered_map<char, std::string> &codes);
+
+
 private:
     void printTree(HuffmanNode *node, std::string prefix = "");
 
-    void generateCodes(HuffmanNode *node, const std::string &prefix, std::unordered_map<char, std::string> &codes);
 
     void deleteTree(HuffmanNode *node);
 
     std::unordered_map<char, int> frequencyTable;
     HuffmanNode *root = nullptr;
 
-    friend class HuffmanTest_GenerateCodesSingleCharacter_Test;
-    friend class HuffmanTest_GenerateCodesMultipleCharacters_Test;
-    friend class HuffmanTest_GenerateCodesEmptyTree_Test;
     friend class HuffmanTest_BuildHuffmanTreeNonEmptyTable_Test;
 };
 
