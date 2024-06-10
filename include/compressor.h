@@ -3,7 +3,6 @@
 
 #include <string>
 
-void compress(const std::string& file, const std::string& algorithm);
+void compress(const std::string &file, const std::string &algorithm);
 
 #endif // COMPRESSOR_H
-
